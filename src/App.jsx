@@ -10,6 +10,8 @@ import Footer from "./components/Footer";
 function App() {
   const [products, setProducts] = useState([]);
 
+  // Use address from here: https://fakestoreapi.com/
+
   useEffect(() => {
     const fetchData = async () => {};
 

@@ -1,21 +1,11 @@
 import styled from "styled-components";
 
-export const WrapperHeader = styled.div`
+export const WrapperLayout = styled.div`
   width: 80%;
-  border-bottom: 2px solid black;
+  ${(props) => props.borderPosition}: ${(props) => props.border};
   height: 10vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-`;
-
-export const WrapperFooter = styled.div`
-  width: 80%;
-  border-top: 2px solid black;
-  height: 10vh;
-  display: flex;
-  justify-content: center;
+  justify-content: ${(props) => props.justify};
   align-items: center;
   margin: 0 auto;
 `;
