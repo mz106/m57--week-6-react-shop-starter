@@ -5,7 +5,7 @@ const Card = ({ product }) => {
   return (
     <WrapperCard>
       <CardPara>{product.title}</CardPara>
-      <CardPara>£{product.price}</CardPara>
+      <CardPara color="red">£{product.price}</CardPara>
       <CardPara>Category: {product.category}</CardPara>
     </WrapperCard>
   );

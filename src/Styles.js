@@ -1,23 +1,19 @@
 import styled from "styled-components";
 
-export const WrapperHeader = styled.div`
+// WrapperLayout is for both the header and the Footer
+
+export const WrapperLayout = styled.div`
   width: 80%;
-  border-bottom: 2px solid black;
+  ${(props) => props.borderPosition}: ${(props) => props.border};
   height: 10vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: ${(props) => props.justify};
   align-items: center;
   margin: 0 auto;
 `;
 
-export const WrapperFooter = styled.div`
-  width: 80%;
-  border-top: 2px solid black;
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+export const Heading = styled.h1`
+  ${(props) => props.property}: ${(props) => props.value};
 `;
 
 export const WrapperPage = styled.div`
@@ -52,6 +48,7 @@ export const WrapperCard = styled.div`
 export const CardPara = styled.p`
   width: 80%;
   text-align: center;
+  color: ${(props) => props.color};
 `;
 
 export const WrapperAbout = styled.div`

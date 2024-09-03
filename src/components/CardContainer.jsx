@@ -6,6 +6,7 @@ import Card from "./Card";
 const CardContainer = ({ products }) => {
   return (
     <WrapperContainer>
+      {/* eslint-disable-next-line react/prop-types */}
       {products.map((product) => (
         <Card product={product} key={product.id} />
       ))}
